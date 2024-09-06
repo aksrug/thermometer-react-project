@@ -1,0 +1,13 @@
+.btnContainer {
+    display: flex;
+    gap: 50px;
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
