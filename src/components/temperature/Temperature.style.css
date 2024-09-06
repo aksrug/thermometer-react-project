@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    font-family: 'Arial', sans-serif;
 }
 
 .countContainer {
@@ -10,14 +11,19 @@
     justify-content: flex-end;
     gap: 2px;
     width: 30px;
+    font-size: 20px;
+    color: #333;
 }
 
 .temperatureBar {
     width: 50px;
     height: 200px;
-    background-color: aliceblue;
+    background-color: #e6f7ff;
     position: relative;
     margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .temperature {
@@ -25,6 +31,8 @@
     left: 0;
     right: 0;
     bottom: 50%;
+    border-radius: 10px 10px 0 0;
+    transition: height 0.5s ease, background-color 0.5s ease;
 }
 
 .middleBar {
@@ -32,6 +40,26 @@
     bottom: 50%;
     left: 0;
     right: 0;
-    height: 1px;
+    height: 2px;
     background-color: black;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    gap: 50px;
+    border: 2px solid #333;
+    border-radius: 15px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.mainContainer:hover {
+    background-color: #e0f7fa;
 }
